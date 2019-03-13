@@ -1,0 +1,32 @@
+html, body  {
+    
+}
+
+#container  {
+    width: 750px;
+    height: 750px;
+}
+
+#grid   {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    --gridSize: 16;
+    grid-template-columns: repeat(var(--gridSize), 1fr);
+    grid-template-rows: repeat(var(--gridSize), 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+.gridNode   {
+    background-color: blue;
+}
+
+.turnBlack  {
+    background-color: black;
+}
+
+/* .gridNode:hover  {
+    background-color: black;
+} */
